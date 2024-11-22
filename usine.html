@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Ma page web" />
+    <meta name="keywords" content="HTML5,CSS3,JavaScript,PHP" />
+    <meta name="author" content="Ali Tounsi" />
+    <!-- Si je veux je peux -->
+    <title>usine</title>
+    <style>
+      body {
+        background-color: darkgray;
+      }
+      h1 {
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+        color: #493d4e;
+        text-shadow: 3px 3px 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Usine</h1>
+    <img
+      src="usine.jpg"
+      width="1000"
+      height="700"
+      alt="**usine**"
+      usemap="#usine"
+    />
+    <map name="usine">
+      <area
+        shape="rect"
+        coords="250,250,750,600"
+        href="panneaux-solaires.html"
+        alt="panneaux-solaire"
+        onclick="myFunction()"
+      />
+      <script>
+        function myFunction() {
+          alert("Vous avez cliqué sur le panneau solaire!");
+        }
+      </script>
+      <area
+        shape="circle"
+        coords="800,250,60"
+        href="centrale.html"
+        alt="centrale"
+      />
+      <area
+        shape="rect"
+        coords="0,60,650,440"
+        href="parking.html"
+        alt="parking"
+      />
+    </map>
+  </body>
+</html>
